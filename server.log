@@ -1,0 +1,1241 @@
+Сервер успешно запущен на порту 5001
+Для проверки соединения перейдите по адресу: http://localhost:5001/api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:55:48.428Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:55:48.434Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:55:48.454Z] GET /api/products
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/login -> /api/login
+[2025-06-22T14:55:53.066Z] POST /api/login
+[/api/login] Попытка входа с email: admin@example.com
+[/api/login] Пользователь найден: admin@example.com, роль: admin
+[/api/login] Неверный пароль
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:55:57.492Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/login -> /api/login
+[2025-06-22T14:56:11.373Z] POST /api/login
+[/api/login] Попытка входа с email: admin@example.com
+[/api/login] Пользователь найден: admin@example.com, роль: admin
+[/api/login] Авторизация успешна, генерация токена
+[/api/login] Токен создан
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:56:11.509Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:56:11.526Z] GET /api/products
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T14:56:16.691Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:56:17.735Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T14:56:17.743Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T14:56:17.747Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:56:18.433Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T14:56:19.754Z] GET /api/products/expired
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T14:56:19.755Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T14:56:19.765Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:56:20.775Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:56:20.776Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T14:56:20.781Z] GET /api/products/expiring-soon
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T14:56:20.782Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:56:21.489Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:56:21.492Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:56:21.510Z] GET /api/products
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:56:21.511Z] GET /api/products
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T14:56:22.791Z] GET /api/products/expiring-soon
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T14:56:22.792Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:56:29.913Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:56:29.927Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:56:30.932Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:56:30.935Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:56:30.939Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:56:30.943Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:56:32.950Z] GET /api/products/expiry-statistics
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:56:32.952Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:56:37.451Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:56:37.451Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:56:37.464Z] GET /api/products
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:56:37.468Z] GET /api/products
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:56:48.438Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:56:59.934Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/2 -> /api/products/2
+[2025-06-22T14:57:03.378Z] PUT /api/products/2
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:57:18.437Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/2 -> /api/products/2
+[2025-06-22T14:57:28.556Z] PUT /api/products/2
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:57:29.929Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:57:48.433Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:00.552Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:00.556Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:58:01.562Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T14:58:01.564Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:01.566Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:01.568Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:58:02.622Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T14:58:02.623Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:58:02.629Z] GET /api/products
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T14:58:02.630Z] GET /api/products
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:03.572Z] GET /api/products/expiry-statistics
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiry-statistics -> /api/products/expiry-statistics
+[2025-06-22T14:58:03.573Z] GET /api/products/expiry-statistics
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:58:18.440Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:58:48.441Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:58:54.758Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:59:18.619Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T14:59:48.626Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T15:00:06.230Z] POST /api/products
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:00:18.625Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/4 -> /api/products/4
+[2025-06-22T15:00:33.449Z] PUT /api/products/4
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:39.569Z] GET /api/products/expired
+CORS запрос от: http://localhost:3000
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:39.581Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T15:00:40.594Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T15:00:40.595Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:40.601Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:40.604Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:42.612Z] GET /api/products/expired
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expired -> /api/products/expired
+[2025-06-22T15:00:42.613Z] GET /api/products/expired
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:42.625Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:42.628Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T15:00:43.632Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/health -> /api/health
+[2025-06-22T15:00:43.634Z] GET /api/health
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:43.637Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:43.641Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:45.649Z] GET /api/products/expiring-soon
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/expiring-soon -> /api/products/expiring-soon
+[2025-06-22T15:00:45.650Z] GET /api/products/expiring-soon
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+Ошибка получения продукта: PrismaClientValidationError: 
+Invalid `prisma.product.findUnique()` invocation in
+/Users/apple/Desktop/диплом/server/index-app.js:395:42
+
+  392 try {
+  393   const { id } = req.params;
+  394   
+→ 395   const product = await prisma.product.findUnique({
+          where: {
+        +   id: Int
+          },
+          include: {
+            category: true
+          }
+        })
+
+Argument `id` is missing.
+    at wn (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at $n.handleRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6958)
+    at $n.handleAndLogRequestError (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/apple/Desktop/диплом/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async /Users/apple/Desktop/диплом/server/index-app.js:395:21 {
+  clientVersion: '5.22.0'
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:00:48.641Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:00:55.628Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T15:01:13.164Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/categories -> /api/categories
+[2025-06-22T15:01:13.165Z] GET /api/categories
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products -> /api/products
+[2025-06-22T15:01:13.176Z] GET /api/products
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:01:18.650Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/4 -> /api/products/4
+[2025-06-22T15:01:28.001Z] PUT /api/products/4
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:01:48.671Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/products/4 -> /api/products/4
+[2025-06-22T15:02:10.708Z] PUT /api/products/4
+Проверка аутентификации запроса
+Заголовки авторизации: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1MDYwNDE3MSwiZXhwIjoxNzUzMTk2MTcxfQ.ux9nbmrphCMfiMk5SCGujOjyKxVx6kzF9U5e_gglM9s
+Токен получен, проверка...
+Токен валиден, пользователь: {
+  id: 2,
+  email: 'admin@example.com',
+  role: 'admin',
+  iat: 1750604171,
+  exp: 1753196171
+}
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:02:18.665Z] GET /api/test/cors-check
+CORS запрос от: undefined
+[2025-06-22T15:02:24.467Z] GET /apple-touch-icon-precomposed.png
+CORS запрос от: undefined
+[2025-06-22T15:02:24.470Z] GET /apple-touch-icon.png
+CORS запрос от: undefined
+[2025-06-22T15:02:24.471Z] GET /favicon.ico
+CORS запрос от: undefined
+[2025-06-22T15:02:24.472Z] GET /favicon.ico
+CORS запрос от: undefined
+[2025-06-22T15:02:24.476Z] GET /logo192.png
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:02:44.760Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:02:48.669Z] GET /api/test/cors-check
+CORS запрос от: http://localhost:3000
+CORS запрос от: http://localhost:3000
+Исправление двойного пути: /api/api/test/cors-check -> /api/test/cors-check
+[2025-06-22T15:03:18.667Z] GET /api/test/cors-check
